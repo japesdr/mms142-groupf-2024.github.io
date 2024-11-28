@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-  </head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<h2>Title: Music Streaming Platforms and their Disruptive Impact to the Music and Radio Broadcasting Industries
+</h2>
+
+<p>Introduction:</p>
+<button type="button" class="collapsible">Open Collapsible</button>
+<div class="content">
+  <p>Disruptive technologies refer to innovations that significantly alter or transform existing industries, markets, or business models, often displacing established technologies, products, or services. These typically begin by serving a niche market or addressing underserved needs, initially offering lower performance or fewer features than existing alternatives. However, overtime, they improve and mature, ultimately surpassing the traditional technologies and becoming the dominant solution in the market.</p>
+  <p>This theory was introduced by Clayton Christensen (1995), describing how “disruption” involves a process of how a smaller company with fewer resources is able to challenge industry giants by offering more affordable, accessible, or convenient alternatives, also reshaping customer behaviors and creating new value propositions.</p>
+  <p>This process enables the disruptive technology to meet the needs of a broader customer base, eventually overtaking the traditional market players. Understanding what makes an innovation “disruptive” helps us appreciate how these technologies reshape industries and redefine the way we live, work, and interact. So, what exactly makes an innovation disruptive?</p>
+
+</div>
+
+<p>Collapsible Set:</p>
+<button type="button" class="collapsible">Open Section 1</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 2</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
 </body>
 </html>
