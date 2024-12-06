@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMS 142 Project</title>
+  <link rel="icon" type="image/x-icon" href="/site-branding/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <!-- MAIN CONTAINER -->
+  <div class="flex h-screen">
+
+    <!-- SIDEBAR -->
+    <aside class="w-64 flex flex-col p-5 space-y-6">
+      <div>
+        <img src="https://placehold.co/500x200" alt="title">
+      </div>
+      <div class="space-y-4">
+        <a href="#" class="flex items-center space-x-4" onclick="toggleSection('part1')">
+          <img src="https://placehold.co/10x10" alt="Message Icon" class="w-6 h-6">
+          <span>Part 1: Disruptive Technologies</span>
+        </a>
+        <a href="#" class="flex items-center space-x-4" onclick="toggleSection('part2')">
+          <img src="https://placehold.co/10x10" alt=" Music Icon" class="w-6 h-6">
+          <span>Part 2: Music Streaming Platforms</span>
+        </a>
+        <a href="#" class="flex items-center space-x-4" onclick="toggleSection('part3')">
+          <img src="https://placehold.co/10x10" alt="Disrupt Icon" class="w-6 h-6">
+          <span>Part 3: Industries Disrupted</span>
+        </a>
+        <a href="#" class="flex items-center space-x-4" onclick="toggleSection('part4')">
+          <img src="https://placehold.co/10x10" alt="ProsCons Icon" class="w-6 h-6">
+          <span>Part 4: The Good and The Bad</span>
+        </a>
+        <a href="#" class="flex items-center space-x-4" onclick="toggleSection('part5')">
+          <img src="https://placehold.co/10x10" alt="Conclu Icon" class="w-6 h-6">
+          <span>Conclusion</span>
+        </a>
+        <a href="#" class="flex items-center space-x-4" onclick="toggleSection('part6')">
+          <img src="https://placehold.co/10x10" alt="References Icon" class="w-6 h-6">
+          <span>References</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 flex flex-col">
+
+      <!-- TOP BAR -->
+      <div class="flex justify-between items-center bg-gray-800 px-6 py-4">
+        <div class="flex items-center space-x-2">
+
+          <!--BACK BUTTON-->
+          <button id="backButton" class="rounded-full bg-gray-700 text-white w-8 h-8 flex items-center justify-center">
+            &larr;
+          </button>
+
+          <!--FORWARD BUTTON-->
+          <button id = "forwardButton" class="rounded-full bg-gray-700 text-white w-8 h-8 flex items-center justify-center">
+            &rarr;
+          </button>
+        </div>
+
+        <!--ABOUT THE GROUP-->
+        <div class="flex items-center space-x-4">
+          <input type="text" placeholder="Search" class="rounded-lg bg-gray-700 text-gray-200 px-4 py-2 focus:outline-none">
+          <button class="px-4 py-2 rounded-lg bg-gray-700 text-white">About Us</button>
+        </div>
+      </div>
+
+    <!--BODY OF THE REPORT-->
+      <!-- PART 1 -->
+      <section id="part1" class="flex-1 p-8 bg-gray-900 text-gray-200">
+
+        <div class="bg-gray-800 rounded-lg p-6 flex items-center space-x-6">
+          <img src="https://via.placeholder.com/150" alt="Topic Image" class="rounded-lg w-40 h-40 object-cover">
+        <div>
+
+        <div class="bg-gray-800 rounded-lg p-6">
+          <h2 class="text-2xl font-semibold text-green-500">Part 1: Disruptive Technologies</h2>
+          <p class="text-gray-400 mt-2">Before diving into Music Streaming Services, let’s discuss the concept of Disruptive Technologies.</p>
+        </div>
+
+      </section>
+
+      <!-- PART 2 -->
+      <section id="part2" class="hidden flex-1 p-8 bg-gray-900 text-gray-200">
+
+        <div class="bg-gray-800 rounded-lg p-6 flex items-center space-x-6">
+          <img src="https://via.placeholder.com/150" alt="Topic Image" class="rounded-lg w-40 h-40 object-cover">
+        <div>
+
+        <div class="bg-gray-800 rounded-lg p-6">
+          <h2 class="text-2xl font-semibold text-green-500">Part 2: Music Streaming Platforms</h2>
+          <p class="text-gray-400 mt-2">Details about music streaming...</p>
+        </div>
+
+      </section>
+
+      <!-- PART 3 -->
+      <section id="part3" class="hidden flex-1 p-8 bg-gray-900 text-gray-200">
+
+        <div class="bg-gray-800 rounded-lg p-6 flex items-center space-x-6">
+          <img src="https://via.placeholder.com/150" alt="Topic Image" class="rounded-lg w-40 h-40 object-cover">
+        <div>
+
+        <div class="bg-gray-800 rounded-lg p-6">
+          <h2 class="text-2xl font-semibold text-green-500">Part 3: Industries Disrupted</h2>
+          <p class="text-gray-400 mt-2">Details about industries disrupted...</p>
+        </div>
+
+      </section>
+
+      <!-- PART 4 -->
+      <section id="part4" class="hidden flex-1 p-8 bg-gray-900 text-gray-200">
+
+        <div class="bg-gray-800 rounded-lg p-6 flex items-center space-x-6">
+          <img src="https://via.placeholder.com/150" alt="Topic Image" class="rounded-lg w-40 h-40 object-cover">
+        <div>
+
+        <div class="bg-gray-800 rounded-lg p-6">
+          <h2 class="text-2xl font-semibold text-green-500">Part 4: The Good and the Bad</h2>
+          <p class="text-gray-400 mt-2">Negative and Positive imapcts...</p>
+        </div>
+
+      </section>
+
+      <!-- PART 5: CONCLUSION -->
+      <section id="part5" class="hidden flex-1 p-8 bg-gray-900 text-gray-200">
+
+        <div class="bg-gray-800 rounded-lg p-6">
+          <h2 class="text-2xl font-semibold text-green-500">Conclusion</h2>
+          <p class="text-gray-400 mt-2">Info Info Info...</p>
+        </div>
+
+      </section>
+
+      <!-- PART 6: REFERENCES -->
+      <section id="part6" class="hidden flex-1 p-8 bg-gray-900 text-gray-200">
+
+        <div class="bg-gray-800 rounded-lg p-6">
+          <h2 class="text-2xl font-semibold text-green-500">References</h2>
+          <p class="text-gray-400 mt-2">Insert all references here.</p>
+        </div>
+
+      </section>
+    
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

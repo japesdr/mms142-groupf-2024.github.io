@@ -1,0 +1,33 @@
+body {
+    font-family: 'Gotham', 'Inter', 'Arial', sans-serif;
+  }
+  
+  /* CUSTOMIZE COLOR */
+  .active-link {
+    color: #d1ad90; /* Green color */
+  }
+  
+  /* SIDEBAR TEXT */
+  aside a {
+    text-decoration: none;
+    color: #c15f64;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+
+  /* SIDEBAR */
+  .w-64.flex.flex-col.p-5.space-y-6 {
+    background-color: #2c0404;
+  }
+  
+  /* COLOR OF SIDEBAR WHEN HOVERED*/
+  aside a:hover {
+    color: #d1ad90;
+  }
+
+  aside a:active {
+    color: #d1ad90;
+    font-weight: bold;
+  }
+  
+  
