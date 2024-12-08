@@ -3,368 +3,447 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MMS 142 Project</title>
-  <link rel="icon" type="image/x-icon" href="/site-branding/favicon.ico">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
+  <title>MMS 142 - Group F (2024)</title>
+  <link rel="icon" type="image/png" href="./site-branding/Icon 1.png">
+  <link rel="stylesheet" href="css\styles.css">
+
+  <!-- box icons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!-- remix icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oi&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-gray-900 text-white">
-
-  <!-- MAIN CONTAINER -->
-  <div class="flex h-screen">
-
-    <!-- SIDEBAR -->
-    <aside class="w-64 flex flex-col p-5 space-y-6">
-      <div>
-        <img src="https://placehold.co/500x200" alt="title">
-      </div>
-      <div class="space-y-4">
-        <a href="#" class="flex items-center space-x-4" onclick="toggleSection('part1')">
-          <img src="https://placehold.co/10x10" alt="Message Icon" class="w-6 h-6">
-          <span>Part 1: Disruptive Technologies</span>
-        </a>
-        <a href="#" class="flex items-center space-x-4" onclick="toggleSection('part2')">
-          <img src="https://placehold.co/10x10" alt=" Music Icon" class="w-6 h-6">
-          <span>Part 2: Music Streaming Platforms</span>
-        </a>
-        <a href="#" class="flex items-center space-x-4" onclick="toggleSection('part3')">
-          <img src="https://placehold.co/10x10" alt="Disrupt Icon" class="w-6 h-6">
-          <span>Part 3: Industries Disrupted</span>
-        </a>
-        <a href="#" class="flex items-center space-x-4" onclick="toggleSection('part4')">
-          <img src="https://placehold.co/10x10" alt="ProsCons Icon" class="w-6 h-6">
-          <span>Part 4: The Good and The Bad</span>
-        </a>
-        <a href="#" class="flex items-center space-x-4" onclick="toggleSection('part5')">
-          <img src="https://placehold.co/10x10" alt="Conclu Icon" class="w-6 h-6">
-          <span>Conclusion</span>
-        </a>
-        <a href="#" class="flex items-center space-x-4" onclick="toggleSection('part6')">
-          <img src="https://placehold.co/10x10" alt="References Icon" class="w-6 h-6">
-          <span>References</span>
-        </a>
-      </div>
-    </aside>
-
-    <!-- Main Content Area -->
-    <main class="flex-1 flex flex-col">
-
-      <!-- TOP BAR -->
-      <div class="flex justify-between items-center bg-gray-800 px-6 py-4">
-        <div class="flex items-center space-x-2">
-
-          <!--BACK BUTTON-->
-          <button id="backButton" class="rounded-full bg-gray-700 text-white w-8 h-8 flex items-center justify-center">
-            &larr;
-          </button>
-
-          <!--FORWARD BUTTON-->
-          <button id = "forwardButton" class="rounded-full bg-gray-700 text-white w-8 h-8 flex items-center justify-center">
-            &rarr;
-          </button>
-        </div>
-
-        <!--ABOUT THE GROUP-->
-        <div class="flex items-center space-x-4">
-          <input type="text" placeholder="Search" class="rounded-lg bg-gray-700 text-gray-200 px-4 py-2 focus:outline-none">
-          <button class="px-4 py-2 rounded-lg bg-gray-700 text-white">About Us</button>
-        </div>
-      </div>
-
-    <!--BODY OF THE REPORT-->
-      <!-- PART 1 -->
-      <section id="part1" class="flex-1 p-8 bg-gray-900 text-gray-200">
-
-        <div class="bg-gray-800 rounded-lg p-6 flex items-center space-x-6">
-          <img src="https://via.placeholder.com/150" alt="Topic Image" class="rounded-lg w-40 h-40 object-cover">
-        <div>
-
-        <div class="bg-gray-800 rounded-lg p-6">
-          <h2 class="text-2xl font-semibold text-green-500">Part 1: Disruptive Technologies</h2>
-          <p class="text-gray-400 mt-2">Before diving into Music Streaming Services, let’s discuss the concept of Disruptive Technologies.</p>        </div>
-
-      </section>
-
-      <section class="part1-body">
-
-        <div class="Disruptive Technologies">
-          <h2 class="text-2xl font-semibold text-green-500">What is a Disruptive Technology?</h2><br>
-
-          <p>Disruptive technologies are innovations that considerably change or revolutionize current industries, markets, or business models, frequently replacing established technologies, products, or services. They usually start by targeting a niche market or fulfilling unmet needs, initially providing lower performance or fewer features compared to existing options. Nevertheless, as time progresses, they enhance and develop, eventually exceeding traditional technologies and emerging as the leading solution in the market.</p><br>
-          <p>This concept was presented by <span class="bold">Clayton Christensen</span> in 1995, explaining how “disruption” refers to the phenomenon where a smaller firm with limited resources can compete against larger industry leaders by providing more cost-effective, accessible, or convenient options, thereby altering customer behaviors and establishing new value propositions.</p><br>
-          <p><span class="bold">Disruption typically progresses through two main stages:</span></p><br>
-
-          <ul>
-            <li>A <span class="bold">preliminary phase of subpar performance</span> — during which the innovation fails to compete with existing technologies.</li>
-            <li>This is succeeded by a <span class="bold">swift enhancement phase</span> — where the disruptive technology significantly improves in quality, performance, and capability.</li>
-          </ul>
-
-          <br>
-
-          <h2 class="text-2xl font-semibold text-green-500">What  exactly  makes an innovation “disruptive”?</h2><br>
-
-          <p>According to Christensen, Raynor, & McDonald (2015), there are three key characteristics that characterize a disruptive innovation.</p><br>
-
-          <dl>
-
-            <dt><span class="bold">1. It starts small and serves overlooked market segments.</span></dt>
-            <dd>Disruptive innovations often target customers or areas that bigger companies ignore because they seem less profitable. These smaller markets might need simpler, more affordable solutions, and that's where disruptive innovations thrive, gradually building a loyal customer base.</dd><br>
-          
-            <dt><span class="bold">2. It aims to challenge larger, established businesses.</span></dt>
-            <dd>These innovations don’t directly go head-to-head with big companies right away. Instead, they slowly grow and improve until they can compete with or sometimes surpass those bigger players, changing the way industries work.</dd><br>
-          
-            <dt><span class="bold">3. It aims to create a new market, not just to focus on improving existing products.</span></dt>
-            <dd>Instead of making an existing product better, disruptive innovations usually focus on creating something entirely new that solves a problem or serves a need that wasn’t addressed before.</dd><br>
-            
-          </dl>
-
-          <br>
-
-          <p>Overall, Disruptive technologies are essentially the ultimate <span class="bold-italic">“game changers”</span> of the market. Often associated with digital transformation, they revolutionize advancements in computing, communication, and automation, which bring about fundamental changes to various industries including information technology (IT), healthcare, transportation, and entertainment. Such innovations are actually not a stranger to us, including the advent of personal computers (PCs) replacing mainframe computers, smartphones displacing feature phones, and streaming services disrupting traditional television broadcasting.</p><br>
-          <p>However, among these many examples, one innovation stands out for reshaping and “disrupting” how we enjoy the music that fuels our daily lives: <span class="bold-italic">music streaming platforms and services.</span></p>
-
-        </div>
-
-      </section>
-          
-      <!-- PART 2 -->
-
-      <section id="part2" class="flex-1 p-8 bg-gray-900 text-gray-200" style="background-color: #f0e7cf;">
-
-        <h1 style="font-size: 80px; text-align: center; color: #780304; font-weight: bold;">What Are Music Streaming Platforms?</h1>
-
-        <img src="vinyl.png" alt="vinyl" width="40%" height="40%"  style="margin-left:auto; margin-right:auto;">
-
-        <div>
-
-          <p style="font-size: 30px; text-align: justify; color:#f0e7cf; background-color: #780304; padding: 25px;">Music streaming services are advanced platforms that function like online libraries, storing millions of songs online and sending them instantly to internet users all around the world through various devices and connections (Miquido, 2024).</p>
-
-          <p style="font-size: 30px; text-align: justify; color:#f0e7cf; background-color: #780304; padding: 25px;">Additionally, these platforms are highly intelligent, allowing algorithm processes to be more advanced and curated to each individual user, paving the way for personalized playlists, suggested songs, and adapt to each user's preferences. All of these transformed how we listen to music, making it more accessible, convenient, and tailored to individual tastes.</p>
-
-        <table style="width: 100%; margin-top: 30px;">
-            <tr>
-              <th style="font-size: 75px;background-color: #780304;color:#f0e7cf; border: 15px solid #780304; width: 30%">
-              <p>HOW</p>
-              <p>DOES IT</p>
-              <p>WORK?</p>
-              </th>
-
-              <th style="font-size: 36px;background-color: #f0e7cf; color:#b62625; border: 15px solid #780304; width: 70%; text-align: justify;">
-                <p style="margin-left: 30px; margin-right: 30px;">Upon hitting the play button, quite complex procedures are initiated within the background of these applications. Let’s get to know music streaming services functions in the perspective of both us, listeners, and the developers themselves.</p>
-              </th>
-            </tr>
-          </table>
-
-          <table style="width: 100%; margin-top: 30px;">
-            <tr>
-              <th style="font-size: 50px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304;width: 50%">
-                <p style="30px;background-color: #f0e7cf; color:#780304; margin-top: -460px; border-radius: 25px;margin-left: 30px; margin-right: 30px">From the POV of Listeners</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px; text-indent: 75px">When we click and play a song, let’s say, on Spotify, this is a form of request which is called a Stream. Specifically, Audio Streaming is a process to listen to media over a wireless Internet connection, without having to download it first (Kandari, 2024).</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px; text-indent: 75px">This request data is broken down into smaller chunks called packets, reaching the source server of Spotify. The streaming service then delivers the requested data (the song played) also in packets so that the user can immediately start listening to pre-buffered music (Patsukhov, 2022).</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px; text-indent: 75px">Additionally, through the use of caching, replaying music can be faster streamed music becomes quicker and more efficient. This reduces the need to re-fetch the same data from the server.</p>
-
-              </th>
-
-              <th style="font-size: 50px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304;width: 50%">
-                <p style="30px;background-color: #f0e7cf; color:#780304; margin-top: 40px; border-radius: 25px;margin-left: 30px; margin-right: 30px">From the POV of Developers</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px; text-indent: 75px">Before sending out music to their users, music streaming services need to go on a process called Music Licensing. This is where they obtain licenses from copyright owners (i.e, the artist/s, songwriter/s, and record label) of the songs they want to include in their libraries.</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px; text-indent: 75px">To secure these rights, music streaming services typically pay licensing fees to allow them to legally distribute music in their platforms. According to Chelles (2023), music streaming services need to have a license agreement upon 3 of the following criteria.</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px;background-color: #780304;padding: 10px;border-radius: 25px">1. Geographic: In what particular countries can the music be streamed?</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px;background-color: #780304;padding: 10px;border-radius: 25px">2. Temporal: How long will the music remain available on the platform?</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px;background-color: #780304;padding: 10px;border-radius: 25px">3. Payment: How much will the music streaming service pay the copyright owners per user stream?</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-bottom: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px; text-indent: 75px">To secure these rights, music streaming services typically pay licensing fees to allow them to legally distribute music in their platforms. According to Chelles (2023), music streaming services need to have a license agreement upon 3 of the following criteria.</p>
-
-              </th>
-            </tr>
-          </table>
-
-          <table style="width: 100%; margin-top: 30px;">
-            <tr>
-              <th style="font-size: 75px;background-color: #780304;color:#f0e7cf; border: 15px solid #780304; width: 30%">
-              <p>HOW</p>
-              <p>DID IT</p>
-              <p>EVOLVE?</p>
-              </th>
-
-              <th style="font-size: 24px;background-color: #f0e7cf; color:#b62625; border: 15px solid #780304; width: 70%; text-align: justify;">
-                <p style="margin-top: 30px;margin-left: 30px; margin-right: 30px;">Music streaming services did not just fell out of a coconut tree, they are the result of a long history of innovation in how we record, store, and listen to sound. Starting with Edison’s phonograph and Berliner’s microphone in the 19th century, the evolution continued through vinyl records in the 40s, cassette tapes in the 60s, and optical discs of the 70s. </p>
-
-                <p style="margin-top: 30px;margin-left: 30px; margin-right: 30px;">However, as technology advances and with the advent of the Internet in the 80s, people began to desire for faster and more convenient ways to access music on their computers. This led to a surge in illegal music downloads and piracy in the early 2000s, with users digitally sharing music files they had uploaded from physical copies they had purchased (Pastukhov, 2022).</p>
-
-                <p style="margin-top: 30px;margin-bottom: 30px;margin-left: 30px; margin-right: 30px;">Thus, this opened for a new innovation gap and a potential growth of a new market, which made way for the development of the music streaming services we know today.  With this, let’s take a look at the timeline of music streaming services.</p>
-
-              </th>
-            </tr>
-          </table>
-
-          <table style="width: 100%; margin-top: 30px;">
-            <tr>
-              <th style="font-size: 75px;background-color: #780304;color:#f0e7cf; border: 15px solid #780304; width: 33%">YEAR</th>
-              <th style="font-size: 75px;background-color: #780304;color:#f0e7cf; border: 15px solid #780304; width: 33%">SERVICE</th>
-              <th style="font-size: 75px;background-color: #780304;color:#f0e7cf; border: 15px solid #780304; width: 33%">DESCRIPTION</th>
-            </tr>
-            <tr>
-              <th style="font-size: 30px;background-color: #f0e7cf;color:#b62625; border: 15px solid #780304; width: 33%">1990s</th>
-              <th style="font-size: 30px;background-color: #f0e7cf;color:#b62625; border: 15px solid #780304; width: 33%">yet to exist</th>
-              <th style="font-size: 30px;background-color: #f0e7cf;color:#b62625; border: 15px solid #780304; width: 33%;"><p style="; margin-top: 30px;margin-left: 30px; margin-right: 30px; margin-bottom: 30px;text-align: left">Audio streaming began to take place with advancements of bandwidth and compression technology which enabled media transmission over the web (Kandari, 2024).</p></th>
-            </tr>
-            <tr>
-              <th style="font-size: 30px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304; width: 33%">1995</th>
-              <th style="font-size: 30px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304; width: 33%">RealNetworks </th>
-              <th style="font-size: 30px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304; width: 33%"><p style="; margin-top: 30px;margin-left: 30px; margin-right: 30px; margin-bottom: 30px;text-align: left">RealNetworks was one of the first to pioneer audio streaming platforms, though its initial focus was on streaming audio news and political events, rather than music.</p></th>
-            </tr>
-            <tr>
-              <th style="font-size: 30px;background-color: #f0e7cf;color:#b62625; border: 15px solid #780304; width: 33%">1999</th>
-              <th style="font-size: 30px;background-color: #f0e7cf;color:#b62625; border: 15px solid #780304; width: 33%">Napster & Rhapsody</th>
-              <th style="font-size: 30px;background-color: #f0e7cf;color:#b62625; border: 15px solid #780304; width: 33%"><p style="; margin-top: 30px;margin-left: 30px; margin-right: 30px; margin-bottom: 30px;text-align: left">Napster was introduced, which introduced MP3 file sharing and the first on-demand subscription-based music streaming platform. Users could freely share, listen to, and download MP3 files, making music more accessible. However, it was faced with major controversies regarding copyright and licensing issues.</p></th>
-            </tr>
-            <tr>
-              <th style="font-size: 30px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304; width: 33%">2003</th>
-              <th style="font-size: 30px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304; width: 33%">iTunes & iTunes Store</th>
-              <th style="font-size: 30px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304; width: 33%"><p style="; margin-top: 30px;margin-left: 30px; margin-right: 30px; margin-bottom: 30px;text-align: left">Released as an Apple-exclusive app for Mac OS 9. It became one of the most popular streaming services in the 2000s, introducing legal ways to purchase and consume tracks via online.</p></th>
-            </tr>
-            <tr>
-              <th style="font-size: 30px;background-color: #f0e7cf;color:#b62625; border: 15px solid #780304; width: 33%">2005</th>
-              <th style="font-size: 30px;background-color: #f0e7cf;color:#b62625; border: 15px solid #780304; width: 33%">Pandora</th>
-              <th style="font-size: 30px;background-color: #f0e7cf;color:#b62625; border: 15px solid #780304; width: 33%"><p style="; margin-top: 30px;margin-left: 30px; margin-right: 30px; margin-bottom: 30px;text-align: left">First available and first released in 2005, it became one of the blueprints of modern online music streaming services.</p></th>
-            </tr>
-            <tr>
-              <th style="font-size: 30px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304; width: 33%">2008</th>
-              <th style="font-size: 30px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304; width: 33%">Spotify & SoundCloud</th>
-              <th style="font-size: 30px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304; width: 33%"><p style="; margin-top: 30px;margin-left: 30px; margin-right: 30px; margin-bottom: 30px;text-align: left">Being launched in the same year, both platforms were initially designed to help aspiring and independent artists to share their music and reach more listeners.</p></th>
-            </tr>
-            <tr>
-              <th style="font-size: 30px;background-color: #f0e7cf;color:#b62625; border: 15px solid #780304; width: 33%">Mid 2010s</th>
-              <th style="font-size: 30px;background-color: #f0e7cf;color:#b62625; border: 15px solid #780304; width: 33%">Apple Music & YouTube Music</th>
-              <th style="font-size: 30px;background-color: #f0e7cf;color:#b62625; border: 15px solid #780304; width: 33%"><p style="; margin-top: 30px;margin-left: 30px; margin-right: 30px; margin-bottom: 30px;text-align: left">In response to the dominant rise of Spotify and digital streaming, tech giants like Apple and Google launched their respective music streaming services. In contrast to the independent platform Spotify, these apps are integrated to a larger ecosystem of products such as the Apple ecosystem and YouTube (Pastukhov, 2022).</p></th>
-            </tr>
-            <tr>
-              <th style="font-size: 30px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304; width: 33%">Present</th>
-              <th style="font-size: 30px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304; width: 33%">Dominance of Spotify and Apple Music and emergence of other services</th>
-              <th style="font-size: 30px;background-color: #b62625;color:#f0e7cf; border: 15px solid #780304; width: 33%"><p style="; margin-top: 30px;margin-left: 30px; margin-right: 30px; margin-bottom: 30px;text-align: left">Today, Spotify and Apple Music remain as the top two dominant players of the music streaming market, with millions of subscribers. However, other services such as Tidal, Amazon Music, YouTube music continues to compete and rise for prominence.</p></th>
-            </tr>
-          </table>
-
-        </div>
-
-      </section>
-
-      <!-- PART 3 -->
-      <section id="part3" class="hidden flex-1 p-8 bg-gray-900 text-gray-200">
-
-        <div class="bg-gray-800 rounded-lg p-6 flex items-center space-x-6">
-          <img src="https://via.placeholder.com/150" alt="Topic Image" class="rounded-lg w-40 h-40 object-cover">
-        <div>
-
-        <div class="bg-gray-800 rounded-lg p-6">
-          <h2 class="text-2xl font-semibold text-green-500">Part 3: Industries Disrupted</h2>
-          <p class="text-gray-400 mt-2">Details about industries disrupted...</p>
-        </div>
-
-      </section>
-
-      <!-- PART 4 -->
-      <section id="part4" class="flex-1 p-8 bg-gray-900 text-gray-200" style="background-color: #780304">
-
-        <h1 style="font-size: 120px; text-align: center; color:#f0e7cf; font-weight: bold; padding: fill; background-color: #780304;">THE GOOD AND THE BAD</h1>
-
-        <div>
-
-          <p style="font-size: 30px; text-align: justify; color:#f0e7cf; background-color: #780304; padding: 25px;border: 15px solid #b62625;text-indent: 75px">While music streaming services have revolutionized the music and radio broadcasting industries, their disruptive impact can be a double-edged sword. As these platforms continue to evolve, they bring about both positive advancements and negative challenges that shape the way we create, consume, and value music today.</p>
-
-          <p style="font-size: 30px; text-align: justify;color:#780304; background-color: #f0e7cf; padding: 25px;border-left: 15px solid #b62625;border-right: 15px solid #b62625;text-indent: 75px">Today, music streaming platforms account for 84% of revenue, and the music industry has grown more than 10% in a year to reach $17.5 billion worldwide. This is a far cry from the earlier models, as there's a wider range of music available for purchase. With 78% of the population or over 600 million subscribers worldwide, streaming music is a widely used method. As a result, this shift has brought several positive advancements, including:</p>
-
-          <p style="font-size: 30px; text-align: justify; color:#f0e7cf; background-color: #780304; padding: 25px;border: 15px solid #b62625;text-indent: 75px">While the disruptive impact of music streaming services has been largely positive, it is not without its challenges. These platforms face problematic issues, particularly regarding artist compensation, biased algorithms, and their contribution to environmental degradation. </p>
-
-          <table style="width: 100%; margin-top: 30px;">
-            <tr>
-              <th style="font-size: 75px;background-color: #f0e7cf;color:#780304; border: 15px solid #b62625; width: 50%">Postive Impacts</th>
-              <th style="font-size: 75px;background-color: #780304;color:#f0e7cf; border: 15px solid #b62625; width: 50%">Negative Impacts</th>
-            </tr>
-            <tr>
-              <th style="font-size: 30px;background-color: #780304;color:#f0e7cf; border: 15px solid #b62625;width: 50%">
-                <p style="text-align: center; margin-top: 30px; margin-left: 30px; margin-right: 30px; background-color: #f0e7cf;color:#780304;border-radius: 25px">Increased Success & Visibility of Independent Artists</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px;text-indent: 75px">Independent artists, who are not signed in big record labels and has limited resources, gained more recognition beyond mainstream music.</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px;text-indent: 75px">For instance, Grammy-award-winning rapper Chance the Rapper and singer-songwriter Lauv both gained widespread digital success without being signed to major record labels (Havens, 2017; Herstand, 2019). As of November 2024, both artists have achieved over 10 billion streams on Spotify alone (Kworb, 2024). This proves that music streaming services have been a significant boost for the visibility and success of independent and smaller artists, offering them a fairer playing field with other established artists.</p>
-
-                <p style="text-align: center; margin-top: 30px; margin-left: 30px; margin-right: 30px; background-color: #f0e7cf;color:#780304;border-radius: 25px">Increased Cultural Exchange</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px;text-indent: 75px">Furthermore, music streaming services have fostered significant international cultural exchange, as demonstrated by the worldwide popularity of K-pop, commonly known as the “Hallyu Wave”.</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px;text-indent: 75px">In fact, global streams of K-pop have increased by 362%, with Southeast Asian streams rising by 423% from 2018 to 2023 (The Korea Times, 2024). K-pop acts such as BTS and BLACKPINK have been able to penetrate international markets without the need for traditional barriers found in non-digital platforms. This trend highlights how music streaming services have expanded the reach of non-Western music, contributing to a more diverse range of discussions and a broader global music landscape.</p>
-
-                <p style="text-align: center; margin-top: 30px; margin-left: 30px; margin-right: 30px; background-color: #f0e7cf;color:#780304;border-radius: 25px">Reduced Cost and Increased Creative Freedom</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px;text-indent: 75px">The blockchain technology integrated in music streaming services result in the creation, distribution, and monetization of music without any hierarchical constraints. This change allows artists to have more control over their work by eliminated numerous middlemen, significantly reducing costs (L'Hommedieu, 2024).</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; margin-bottom: 30px; font-size: 30px;text-indent: 75px">Moreover, small artists can now release their music independently without costly significant label deals, which gives them more creative freedom and the ability to manage their own careers (Butler, 2019). This shows how music streaming platforms have democratized the music industry, empowering all artists regardless of their background.</p>
-              </th>
-
-              <th style="font-size: 30px;background-color: #f0e7cf;color:#780304; border: 15px solid #b62625;width: 50%;">
-                <p style="text-align: center; margin-top: 30px; margin-top: -145px; margin-left: 30px; margin-right: 30px; background-color: #780304;color:#f0e7cf;border-radius: 25px">Unjust Artist Compensation</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px;text-indent: 75px">While music streaming platforms generate substantial revenue, the amount artists earn per stream remains minimal. For example, in 2014, Spotify paid artists an average of $0.0038 per stream, which increased to $0.035 per stream in 2020 (Aswad, 2024). This is a decent increase but still criticized as unsustainable, especially for smaller or independent artists.</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px;text-indent: 75px">Also, Spotify CEO Daniel Ek revealed that artists are not being paid directly, but rather their record labels and publishers (Alford, 2023), which may leave artists with a fraction of the earnings.</p>
-
-                <p style="text-align: center; margin-top: 30px; margin-left: 30px; margin-right: 30px; background-color: #780304;color:#f0e7cf;border-radius: 25px">Biased Algorithms</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px;text-indent: 75px">Despite earlier claims that music streaming services help independent artists, the saturation of these platforms today has resulted in biased algorithms that put smaller, independent artists at a disadvantage.</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px;text-indent: 75px">To elaborate, Horgenmiller (2022) notes that Spotify’s algorithm exhibits a popularity bias. In simple terms, their algorithm tends to favor songs, artists, and genres that are already popular and mainstream, presenting them more frequently in users' recommendations. With the platform’s per-stream royalty model, established artists continue to dominate, while smaller artists struggle to grow and earn profit.</p>
-
-                <p style="text-align: center; margin-top: 30px; margin-left: 30px; margin-right: 30px; background-color: #780304;color:#f0e7cf;border-radius: 25px">Contribution to Environmental Degradation</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; font-size: 30px;text-indent: 75px">Despite the absence of physical mediums, digital music consumption and streaming services still contribute to environmental harm. Surprisingly, ∼4% of the world's carbon emissions come from the energy required for servers, data transmission, and infrastructure supporting music streaming (Carbometrix, 2022).</p>
-
-                <p style="text-align: justify; margin-top: 30px; margin-left: 30px; margin-right: 30px; margin-bottom: 30px; font-size: 30px;text-indent: 75px">Additionally, Sharon George of Keele University (2021, as cited in CBC News) pointed out that streaming just five hours of music is equivalent to the carbon footprint of one plastic CD case, while 17 hours of streaming equals the carbon footprint of one vinyl record.</p>
-              </th>
-            </tr>
-          </table>
-
-        </div>
-
-      </section>
-
-      <!-- PART 5: CONCLUSION -->
-      <section id="part5" class="hidden flex-1 p-8 bg-gray-900 text-gray-200">
-
-        <div class="bg-gray-800 rounded-lg p-6">
-          <h2 class="text-2xl font-semibold text-green-500">Conclusion</h2>
-        </div>
-
-        <div class="conclu-body">
-          <p>In general, disruptive technologies are breakthrough innovations that open up new possibilities in our various fields or industries. These innovations are meant to break the norms, and there's no doubt that music streaming services are one of these. These platforms have truly transformed how we consume and produce music, offering increased accessibility to one of the most common recreational activities in the world, which is listening to music.</p><br>
-          <p>Moreover, as digital technologies continue to evolve, so do music streaming services. Today, many platforms integrate modern internet trends such as 5G connectivity, integration with smart devices and home appliances, and most importantly, the inclusion of AI technologies (Miquido, 2024). For example, Spotify now features “DJ,” an AI-powered tool that curates playlists and provides personalized recommendations. With the integration of these numerous ICT trends, the challenges faced by music streaming services can be addressed, or perhaps, another disruptive innovation can emerge to take the spotlight and challenge music streaming itself.</p>
-        </div>
-
-      </section>
-
-      <!-- PART 6: REFERENCES -->
-      <section id="part6" class="hidden flex-1 p-8 bg-gray-900 text-gray-200">
-
-        <div class="bg-gray-800 rounded-lg p-6">
-          <h2 class="text-2xl font-semibold text-green-500">References</h2>
-          <p class="text-gray-400 mt-2">Insert all references here.</p>
-        </div>
-
-      </section>
-    
-    </main>
+<body>
+
+  <!-- sidebar navigation -->
+  <div class="sidebar">
+    <a href="#" class="logo">
+      <img src="site-branding/Logo.png" alt="Logo">
+    </a>
+    <ul class="navlinks">
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#part1">Part 1: Disruptive Technologies</a></li>
+      <li><a href="#part2">Part 2: Music Streaming Platforms</a></li>
+      <li><a href="#part3">Part 3: Industries Disrupted</a></li>
+      <li><a href="#part4">Part 4: The Good and The Bad</a></li>
+      <li><a href="#part5">Part 5: Conclusion</a></li>
+      <li><a href="#refe">References</a></li>
+    </ul>
   </div>
 
-  <script src="script.js"></script>
+  <!-- top bar -->
+  <header class="topbar">
+    <div class="navigation-buttons">
+      <button id="backButton" class="nav-btn">
+        <i class="ri-arrow-left-line"></i>
+      </button>
+      <button id="forwardButton" class="nav-btn">
+        <i class="ri-arrow-right-line"></i>
+      </button>
+    </div>
+    <img src="site-branding/Icon 1.png" style="width: 40px; height: auto; margin-left: 200px;">
+    <div class="topbar-right">
+      <input type="text" id="searchBar" class="search-bar" placeholder="Search">
+      <button id="aboutButton" class="about-btn">Group F - 2024</button>
+    </div>
+  </header>
+
+  <!------------------------------------------ MAIN CONTENT!! ------------------------------------------->
+  <div class="content">
+
+    <!-- INTRODUCTION -->
+    <section id="intro">
+      <h1 class="titulo">The Sound of Digital Disruption: Music Streaming Services and its Disruptive Impact in Music and Radio Broadcasting Industries</h1>
+      <p class="subtitle">MMS 142 - Internet Technologies and Web Development | Group F | December 8, 2024</p>
+      <button id="readMoreBtn" class="read-more-btn">Read More ▼</button>
+    </section>
+
+    <!-- PART 1: DISRUPTIVE TECHNOLOGIES -->
+    <section id="part1"> 
+      <h1 class="titulo1">What are Disruptive Technologies?</h1>
+      <p class="subs">Before diving into Music Streaming Services, let’s discuss the concept of Disruptive Technologies.</p>
+      <hr class="line1">
+
+      <div class="text-image-container">
+        <div class="text-content">
+          <p class="text1">
+            Disruptive technologies are <strong>innovations</strong> that considerably change or revolutionize current industries, markets, or business models, frequently replacing established technologies, products, or services. They usually start by targeting a niche market or fulfilling unmet needs, initially providing lower performance or fewer features compared to existing options. Nevertheless, as time progresses, they enhance and develop, eventually exceeding traditional technologies and emerging as the leading solution in the market.
+          </p>
+          <p class="text1">
+            This concept was presented by <strong>Clayton Christensen</strong> in 1995, explaining how “disruption” refers to the phenomenon where a smaller firm with limited resources can compete against larger industry leaders by providing more cost-effective, accessible, or convenient options, thereby altering customer behaviors and establishing new value propositions.
+          </p>
+          <p class="text0">
+            <strong>Disruption typically progresses through two main stages: </strong>
+          </p>
+          <ol>
+            <li class="list1"><strong>1)  A preliminary phase of subpar performance</strong> — during which the innovation fails to compete with existing technologies. </li>
+            <li class="list1"><strong>2) This is then succeeded by a swift enhancement phase</strong> — where the disruptive technology significantly improves in quality, performance, and capability.</li>
+          </ol>
+        </div>
+        <figure class="figure">
+          <img src="report-images/clayton.png" class="clayton" alt="Clayton Christensen">
+          <figcaption class="caption1">
+            Clayton Christensen, by Harvard Business School (2020).
+          </figcaption>
+        </figure>
+      </div><br><br><br>
+
+      <h1 class="titulo1">What exactly makes an innovation “disruptive”?</h1>
+      <p class="subs">According to Christensen, Raynor, & McDonald (2015), there are three key characteristics that characterize a disruptive innovation.</p>
+
+      <div class="rectangle">
+        <div class="element1">
+          <i class='bx bx-store'></i>
+          <h3 class="disElements">It starts small and serves overlooked market segments.</h3>
+          <p class="disElements-text">Disruptive innovations often target customers or areas that bigger companies ignore because they seem less profitable. These smaller markets might need simpler, more affordable solutions, and that's where disruptive innovations thrive, gradually building a loyal customer base.</p>
+        </div>
+
+        <div class="element1">
+          <i class='bx bx-line-chart' ></i>
+          <h3 class="disElements">It aims to challenge larger, established businesses.</h3>
+          <p class="disElements-text">These innovations don’t directly go head-to-head with big companies right away. Instead, they slowly grow and improve until they can compete with or sometimes surpass those bigger players, changing the way industries work.</p>
+        </div>
+
+        <div class="element1">
+          <i class='bx bxs-leaf' ></i>
+          <h3 class="disElements">It aims to create a new market, not just to focus on improving existing products.</h3>
+          <p class="disElements-text">Instead of making an existing product better, disruptive innovations usually focus on creating something entirely new that solves a problem or serves a need that wasn’t addressed before.</p>
+        </div>
+      </div>
+
+      <p class="text1">
+        Overall, Disruptive technologies are essentially the ultimate <strong><em>“game changers”</em></strong> of the market. Often associated with digital transformation, they revolutionize advancements in computing, communication, and automation, which bring about fundamental changes to various industries including information technology (IT), healthcare, transportation, and entertainment. Such innovations are actually not a stranger to us, including the advent of personal computers (PCs) replacing mainframe computers, smartphones displacing feature phones, and streaming services disrupting traditional television broadcasting. 
+      </p>
+      <p class="text1">
+        However, among these many examples, one innovation stands out for reshaping and “disrupting” how we enjoy the music that fuels our daily lives: <strong>music streaming platforms and services.</strong>
+        </p>
+
+    </section>
+
+<!-- PART 2: MUSIC STREAMING PLATFORMS -->
+<section id="part2"> 
+  <h1 class="titulo2">What are Music Streaming Services?</h1>
+  <p class="subs2">
+    Now that we know what disruptive technologies are, let’s now get to know <strong>Music Streaming Services</strong>: one of the biggest technological revolutions in the way people consume and engage with music, especially in the current digital context.
+  </p>
+  <hr class="line2">
+
+  <div class="content-wrapper">
+    <img src="report-images/pic2.png" alt="Description of the image" class="left-image">
+    <div class="text-content">
+      <p class="text2">
+        Music streaming services are advanced platforms that function like online libraries, storing millions of songs online and sending them instantly to internet users all around the world through various devices and connections (Miquido, 2024).
+      </p>
+
+      <p class="text2">
+        Additionally, these platforms are highly intelligent, allowing algorithm processes to be more advanced and curated to each individual user, paving the way for personalized playlists, suggested songs, and adapt to each user's preferences. All of these transformed how we listen to music, making it more accessible, convenient, and tailored to individual tastes.
+      </p>
+    </div>
+  </div>
+
+  <div class="rounded-rectangle">
+    <h2 class="rectangle-title">How does it work?</h2>
+    <p class="rectangle-text">
+      Upon hitting the play button, quite complex procedures are initiated within the background of these applications. Let’s get to know music streaming services functions in the perspective of both us, <strong>listeners</strong>, and the <strong>developers</strong> themselves.
+    </p>
+    <div class="maroon-wrapper">
+      <div class="maroon-rectangle">
+        <h3>From the POV of Listeners</h3>
+        <i class="ri-headphone-fill"></i>
+        <p>
+          When we click and play a song, let’s say, on Spotify, this is a form of request which is called a Stream. Specifically, Audio Streaming is a process to listen to media over a wireless Internet connection, without having to download it first (Kandari, 2024).
+        </p>
+        <p>
+          This request data is broken down into smaller chunks called packets, reaching the source server of Spotify. The streaming service then delivers the requested data (the song played) also in packets so that the user can immediately start listening to pre-buffered music (Patsukhov, 2022).
+        </p>
+        <p>
+          Additionally, through the use of caching, replaying music can be faster streamed music becomes quicker and more efficient. This reduces the need to re-fetch the same data from the server.
+        </p>
+      </div>
+
+      <div class="maroon-rectangle">
+        <h3>From the POV of Developers</h3>
+        <i class="ri-code-box-fill"></i>
+        <p>
+          Before sending out music to their users, music streaming services need to go on a process called Music Licensing. This is where they obtain licenses from copyright owners (i.e, the artist/s, songwriter/s, and record label) of the songs they want to include in their libraries.
+        </p>
+        <p>
+          To secure these rights, music streaming services typically pay licensing fees to allow them to legally distribute music in their platforms. According to Chelles (2023), music streaming services need to have a license agreement upon 3 of the following criteria.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rounded-rectangle">
+    <h2 class="rectangle-title">How Did It Evolve?</h2>
+    <p class="rectangle-text" style="text-align: justify; text-indent: 80px;">
+      Music streaming services did not just fell out of a coconut tree, they are the result of a long history of innovation in how we record, store, and listen to sound. Starting with Edison’s phonograph and Berliner’s microphone in the 19th century, the evolution continued through vinyl records in the 40s, cassette tapes in the 60s, and optical discs of the 70s.
+    </p><br>
+    <p class="rectangle-text" style="text-align: justify; text-indent: 80px;">
+      This led to a surge in <strong>illegal music downloads and piracy</strong> in the early 2000s, with users digitally sharing music files they had uploaded from physical copies they had purchased (Pastukhov, 2022).
+    </p><br>
+    <p class="rectangle-text" style="text-align: justify; text-indent: 80px;">
+      Thus, this opened for <strong>a new innovation gap</strong> and a <strong>growth of a new market</strong>, which made way for the development of the music streaming services we know today.  With this, let’s take a look at the timeline of music streaming services.
+    </p>
+    <table class="timeline-table">
+      <thead>
+        <tr>
+          <th style="text-align: center;">Year</th>
+          <th style="text-align: center;">Service</th>
+          <th style="text-align: center;">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center;">1990s</td>
+          <td></td>
+          <td style="text-align: justify;">Audio streaming began to take place with advancements of bandwidth and compression technology which enabled media transmission over the web (Kandari, 2024).</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">1995</td>
+          <td style="text-align: center;"><strong>RealNetworks</strong></td>
+          <td>RealNetworks was one of the first to pioneer audio streaming platforms, though its initial focus was on streaming audio news and political events, rather than music.</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">1999</td>
+          <td style="text-align: center;"><strong>Napster / Rhapsody</strong></td>
+          <td>Napster was introduced, which introduced MP3 file sharing and the first on-demand subscription-based music streaming platform. Users could freely share, listen to, and download MP3 files, making music more accessible. However, it was faced with major controversies regarding copyright and licensing issues.</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">2003</td>
+          <td style="text-align: center;"><strong>iTunes, iTunes Store</strong></td>
+          <td>Released as an Apple-exclusive app for Mac OS 9. It became one of the most popular streaming services in the 2000s, introducing legal ways to purchase and consume tracks via online.</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">2005</td>
+          <td style="text-align: center;"><strong>Pandora</strong></td>
+          <td>First available and first released in 2005, it became one of the blueprints of modern online music streaming services.</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">2008</td>
+          <td style="text-align: center;"><strong>Spotify and SoundCloud</strong></td>
+          <td>Being launched in the same year, both platforms were initially designed to help aspiring and independent artists to share their music and reach more listeners.</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">Mid-2010s</td>
+          <td style="text-align: center;"><strong>Apple Music and YouTube Music</strong></td>
+          <td>In response to the dominant rise of Spotify and digital streaming, tech giants like Apple and Google launched their respective music streaming services. In contrast to the independent platform Spotify, these apps are integrated to a larger ecosystem of products such as the Apple ecosystem and YouTube (Pastukhov, 2022).</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">Present</td>
+          <td style="text-align: center;"><strong>Dominance of Spotify and Apple Music and emergence of other services</strong></td>
+          <td>Today, Spotify and Apple Music remain as the top two dominant players of the music streaming market, with millions of subscribers. However, other services such as Tidal, Amazon Music, YouTube music continues to compete and rise for prominence.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+    <!-- PART 3: INDUSTRIES DISRUPTED -->
+    <section id="part3">
+      <h1 class="titulo1">What Industries are Being Disrupted?</h1>
+      <p class="subs">
+        Now that we’ve introduced the concepts of disruptive technologies and music streaming services, it’s time to dive deeper into their influence. Music streaming platforms have directly reshaped the landscape of not one, but two primary industries: (1) <strong>The Music Industry</strong> and (2) <strong>the Radio Broadcasting Industry</strong>.
+      </p>
+      <hr class="line1" style="margin-left: 500px;">
+
+      <h1 class="titulo3">The Music Industry</h1>
+      <p class="subs3">The music industry is the primary industry affected, or rather “disrupted”, by the advent of music streaming services. Particularly, this disruption is evident in three key areas of this industry: <strong>(1)</strong> music distribution, <strong>(2)</strong> music experience and consumption, and <strong>(3)</strong> music compensation.</p>
+
+      <div class="rectangle2">
+        <div class="element2">
+          <i class="ri-creative-commons-sa-line"></i>
+          <h3 class="disElements2">Music Distribution</h3>
+          <p class="disElements2-text" style="text-indent: 50px;">In terms of this aspect, music streaming services have disrupted how and in what formats music is being distributed. Physical formats such as Vinyl records and CDs are now challenged by music streaming services, and has seen a significant decline in revenue, dropping from almost $20 billion in 2001 to less than $5 billion in 2022 (IFPI, as cited from Miquido, 2024).</p><br>
+          <p class="disElements2-text" style="text-indent: 50px;">Thus, music labels and artists have had to rethink their strategies, adopting innovative business models and release methods. Examples include offering limited-time access to digital tracks or launching digital-exclusive singles to better engage with fans (Miquido, 2024).</p>
+        </div>
+
+        <div class="element2">
+          <i class="ri-file-music-line"></i>
+          <h3 class="disElements2">Music Experience and Consumption</h3>
+          <p class="disElements2-text" style="text-indent: 50px;">With the transition to digital formats which pave the way for on-demand access to music, customer and fan behavior has also been altered. Listeners can now listen virtually to any song, anywhere, at any time. This convenience eliminates the need to visit physical stores and deciding which album to buy is worth it, and now replaced by subscription-based or ad-supported streaming models.</p><br>
+          <p class="disElements2-text" style="text-indent: 50px;">Spotify, for example, pioneered the freemium business model, which provides access to all platform features for free while offering additional privileges to premium subscribers. These perks include offline downloads and ad-free listening (Dange, 2024), which caters to a wider array of users and enhances the overall music experience.</p>
+        </div>
+
+        <div class="element2">
+          <i class="ri-currency-line"></i>
+          <h3 class="disElements2">Music Compensation</h3>
+          <p class="disElements2-text" style="text-indent: 50px;">Lastly, how artists are paid has also been disrupted by music streaming services. In particular, artists and record labels now earn profit from these services through per-stream royalties instead of the traditional physical album sales (Dange, 2024). Essentially, the more a song is listened to, the more they earn.</p><br>
+          <p class="disElements2-text" style="text-indent: 50px;">Additionally, music streaming service companies are now part of the payout division, which significantly affects how artists earn (Patsukhov, 2022). This particular disruption has several controversies surrounding it, and it shall be discussed later on in the report.</p>
+        </div>
+      </div>
+
+      <h1 class="titulo3" style="margin-top:70px;">The Radio Broadcasting Industry</h1>
+      <p class="subs3" style="text-indent: 80px;">
+        Apart from the music industry, music streaming platforms also changed the world of radio broadcasting. With the rise of podcasts and on-demand streaming, listeners now have the freedom to select what they want to hear and when. Hence, this shift has disrupted traditional radio broadcasting models, challenging their relevance in a landscape dominated by personalized and on-demand content (Hogg, 2021).
+      </p>
+      <p class="subs3" style="text-indent: 80px;">
+        In the Philippines, some radio stations have adapted to this change by repurposing their content for music streaming platforms. These include short news snippets from ABS-CBN’s podcast “News Flash” and the popular radio drama segments “Dear MOR” of the radio station MOR 101.9 (DWRR-FM).
+      </p>
+      <div class="iframe-container">
+        <iframe style="border-radius:15px;" src="https://open.spotify.com/embed/show/1BZapLqnFsvrY8E4IbXz0g?utm_source=generator" width="30%" height="352px" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:15px;" src="https://open.spotify.com/embed/show/6nUqf2tmzmv0g8M6JSf2VL?utm_source=generator" width="30%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      
+      
+    </section>
+    
+<!-- PART 4: THE GOOD AND THE BAD -->
+<section id="part4">
+  <h1 class="titulo2">The Good and The Bad</h1>
+  <p class="subs2">
+    While music streaming services have revolutionized the music and radio broadcasting industries, their disruptive impact can be a double-edged sword. As these platforms continue to evolve, they bring about both <strong>positive advancements</strong> and <strong>negative challenges</strong> that shape the way we create, consume, and value music today.
+  </p>
+  <hr class="line2">
+  <div class="impact-container">
+    <p class="impact-text good-impact">
+      Today, music streaming platforms account for 84% of revenue, and the music industry has grown more than 10% in a year to reach $17.5 billion worldwide. This is a far cry from the earlier models, as there's a wider range of music available for purchase. With 78% of the population or over 600 million subscribers worldwide, streaming music is a widely used method. As a result, this shift has brought several positive advancements, including:
+    </p>
+
+    <p class="impact-text bad-impact">
+      While the disruptive impact of music streaming services has been largely positive, it is not without its challenges. These platforms face problematic issues, particularly regarding artist compensation, biased algorithms, and their contribution to environmental degradation.
+    </p>
+
+    <table class="impact-table">
+      <thead>
+        <tr>
+          <th style="text-align: center;">Positive Impacts</th>
+          <th style="text-align: center;">Negative Impacts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <p class="sub-impact-title">Increased Success & Visibility of Artists</p>
+            <p class="tabl2text">
+              Independent artists, who are not signed in big record labels and have limited resources, gained more recognition beyond mainstream music. For instance, Grammy-award-winning rapper Chance the Rapper and singer-songwriter Lauv both gained widespread digital success without being signed to major record labels (Havens, 2017; Herstand, 2019). As of November 2024, both artists have achieved over 10 billion streams on Spotify alone (Kworb, 2024). 
+            </p>
+            <p class="tabl2text">
+              This proves that music streaming services have been a significant boost for the visibility and success of independent and smaller artists, offering them a fairer playing field with other established artists.
+            </p>
+            <p class="sub-impact-title">Increased Cultural Exchange</p>
+            <p class="tabl2text">
+              In fact, global streams of K-pop have increased by 362%, with Southeast Asian streams rising by 423% from 2018 to 2023 (The Korea Times, 2024). K-pop acts such as BTS and BLACKPINK have been able to penetrate international markets without the need for traditional barriers found in non-digital platforms. This trend highlights how music streaming services have expanded the reach of non-Western music, contributing to a more diverse range of discussions and a broader global music landscape.
+            </p><br>
+            <p class="tabl2text">
+              In fact, global streams of K-pop have increased by 362%, with Southeast Asian streams rising by 423% from 2018 to 2023 (The Korea Times, 2024). K-pop acts such as BTS and BLACKPINK have been able to penetrate international markets without the need for traditional barriers found in non-digital platforms. This trend highlights how music streaming services have expanded the reach of non-Western music, contributing to a more diverse range of discussions and a broader global music landscape.
+            </p>
+            <p class="sub-impact-title">Reduced Cost and Increased Creative Freedom</p>
+            <p class="tabl2text">
+              The blockchain technology integrated into music streaming services results in the creation, distribution, and monetization of music without any hierarchical constraints. This change allows artists to have more control over their work by eliminating numerous middlemen, significantly reducing costs (L'Hommedieu, 2024).
+            </p><br>
+            <p class="tabl2text">
+              Moreover, small artists can now release their music independently without costly significant label deals, which gives them more creative freedom and the ability to manage their own careers (Butler, 2019). This shows how music streaming platforms have democratized the music industry, empowering all artists regardless of their background.
+            </p>
+          </td>
+          <td>
+            <p class="sub-impact-title">Unjust Artist Compensation</p>
+            <p class="tabl2text">
+              While music streaming platforms generate substantial revenue, the amount artists earn per stream remains minimal. For example, in 2014, Spotify paid artists an average of $0.0038 per stream, which increased to $0.035 per stream in 2020 (Aswad, 2024). This is a decent increase but still criticized as unsustainable, especially for smaller or independent artists.
+            </p><br>
+            <p class="tabl2text">
+              Also, Spotify CEO Daniel Ek revealed that artists are not being paid directly, but rather their record labels and publishers (Alford, 2023), which may leave artists with a fraction of the earnings.
+            </p><br>
+            <p class="sub-impact-title">Biased Algorithms</p>
+            <p class="tabl2text">
+              Despite earlier claims that music streaming services help independent artists, the saturation of these platforms today has resulted in biased algorithms that put smaller, independent artists at a disadvantage.
+            </p><br>
+            <p class="tabl2text">
+              To elaborate, Horgenmiller (2022) notes that Spotify’s algorithm exhibits a popularity bias. In simple terms, their algorithm tends to favor songs, artists, and genres that are already popular and mainstream, presenting them more frequently in users' recommendations. With the platform’s per-stream royalty model, established artists continue to dominate, while smaller artists struggle to grow and earn profit.
+            </p><br><br><br><br><br><br><br>
+            <p class="sub-impact-title">Contribution to Environmental Degradation</p>
+            <p class="tabl2text">
+              Despite the absence of physical mediums, digital music consumption and streaming services still contribute to environmental harm. Surprisingly, ∼4% of the world's carbon emissions come from the energy required for servers, data transmission, and infrastructure supporting music streaming (Carbometrix, 2022). 
+            </p><br>
+            <p class="tabl2text">
+              Additionally, Sharon George of Keele University (2021, as cited in CBC News) pointed out that streaming just five hours of music is equivalent to the carbon footprint of one plastic CD case, while 17 hours of streaming equals the carbon footprint of one vinyl record.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+    <!-- PART 5: CONCLUSION -->
+    <section id="part5">
+      <h1 class="titulo1">Conclusion</h1>
+      <hr class="line1" style="margin-left: 520px;">
+      <p class="text1">
+        In general, disruptive technologies are breakthrough innovations that open up new possibilities in our various fields or industries. These innovations are meant to break the norms, and there's no doubt that music streaming services are one of these. These platforms have truly transformed how we consume and produce music, offering increased accessibility to one of the most common recreational activities in the world, which is listening to music.
+      </p>
+      <p class="text1">
+        Moreover, as digital technologies continue to evolve, so do music streaming services. Today, many platforms integrate modern internet trends such as 5G connectivity, integration with smart devices and home appliances, and most importantly, the inclusion of AI technologies (Miquido, 2024). For example, Spotify now features “DJ,” an AI-powered tool that curates playlists and provides personalized recommendations. With the integration of these numerous ICT trends, the challenges faced by music streaming services can be addressed, or perhaps, another disruptive innovation can emerge to take the spotlight and challenge music streaming itself.
+      </p>
+    </section>
+
+     <!-- REFERENCES -->
+    <section id="refe">
+      <h1 class="reftitulo">References</h1>
+      <hr class="line2" style="margin-left: 460px; margin-bottom: 20px;">
+      <ul class="reference-list">
+        <li>A brief history of sound recording. (2022, July 7). Pirate Studios. https://pirate.com/en/blog/history-of-music-recording/</li>
+        <li>A brief history of sound recording. (2022, July 7). Pirate Studios. https://pirate.com/en/blog/history-of-music-recording/</li>
+        <li>Alford, A. (2023, March 9). Spotify CEO explains issue of artists' pay, says it's "hard to change the narrative”. CBS News. https://www.cbsnews.com/news/spotify-ceo-daniel-ek-artists-pay-hard-to-change-the-narrative/</li>
+        <li>Arkose Labs. (2024, January 23). What is Music Streaming Fraud? | Arkose Labs. https://www.arkoselabs.com/explained/what-is-music-streaming-fraud</li>
+        <li>Aswad, J. (2024, February 22). Songwriters Slam Unfair Streaming Payments in Sadly Hilarious New Video — but Will Anything Change? Variety. https://variety.com/2024/music/news/songwriters-slam-unfair-streaming-payments-video-1235919508/</li>
+        <li>Blanchet, S. C., Reece Rogers, Ben. (2024, June 29). The 5 best music streaming services you can subscribe to in 2021. Business Insider. https://www.businessinsider.com/guides/tech/best-music-streaming-service-subscription
+        </li>
+        <li>Bower, J. L., & Christensen, C. M. (1995). Disruptive Technologies: Catching the Wave. Harvard Business Review, 73(1), 43-53. https://hbr.org/1995/01/disruptive-technologies-catching-the-wave</li>
+        <li>Business Columnist. (2024, September 10). The Streaming Royalties Controversy: Why Artists Are Still Fighting for Fair Pay. Music Industry Weekly. https://musicindustryweekly.com/streaming-royalties-fair-pay-artists/</li>
+        <li>Butler, A. (2019). Why Streaming is a Good Thing for the Music Industry Why Streaming is a Good Thing for the Music Industry. https://scholarlycommons.pacific.edu/cgi/</li>
+        <li>Carbometrix. (2022, March 22). 5 things to know about cloud computing and GHG emissions. https://carbometrix.com/insights/five-things-to-know-about-cloud-computing</li>
+        <li>CBC Music. (2023). The Environmental Impact of Music Streaming, Explained. Retrieved from https://www.cbc.ca/music/the-environmental-impact-of-music-streaming-explained-1.6843948</li>
+        <li>Chelles, V. (2022). How music licensing works for music streaming services?. Tuned Global. https://blog.tunedglobal.com/how-music-licensing-works-for-music-streaming-services</li>
+        <li>Christensen, C. M. (1997). The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail. Harvard Business Review Press.</li>
+        <li>Christensen, C. M., Raynor, M. E., & McDonald, R. (2015). Disruptive Innovation: An Intellectual History and Directions for Future Research. Journal of Management Studies, 52(3), 395-418. https://doi.org/10.1111/joms.12174</li>
+        <li>Cooke, C. (2022, July). Music Streaming Explained | CMU Library. CMU Library. https://cmulibrary.com/cmudiy-musicstreamingexplained/</li>
+        <li>Dange, N. (2024, September 14). Spotify Business Model. GrowthX Deep Dive. https://growthx.club/blog/spotify-business-model</li>
+        <li>Duarte, F. (2024, February 1). Music Streaming Services Stats (2024). Exploding Topics. https://explodingtopics.com/blog/music-streaming-stats</li>
+        <li>ElectroMarket. (n.d.). What is streaming music? | ElectroMarket. https://electromarket.co.uk/guide/home-audio/what-is-streaming-music</li>
+        <li>Getting access to Spotify for Artists - Spotify. (n.d.). Spotify. https://support.spotify.com/us/artists/article/getting-access-to-spotify-for-artists/</li>
+        <li>Goodwin, B. (2024, June 22). Tuning In to Change: Podcasting’s Impact on Radio. LDBK. https://ldbk.eu/how-podcasting-has-changed-the-radio-industry/
+        </li>
+        <li>Guillaume Jouvencel. (2024, September 4). The Competitive Edge of Global Podcasting Over Traditional Radio. Podcast Marketing Agency - GHA Podcast. https://ghapodcast.com/the-rise-of-global-podcasting-and-its-impact-on-traditional-radio</li>
+        <li>Guo, X. (2023). The evolution of the music industry in the digital age: From records to streaming. Journal of Sociology and Ethnology, 5(10). https://doi.org/10.23977/jsoce.2023.051002</li>
+        <li>Havens, L. (2017, February 13). Chance the rapper’s ‘Coloring book’ is first streaming-only album to win a grammy. Billboard. https://www.billboard.com/music/awards/chance-the-rapper-coloring-book-first-streaming-only-album-grammy-7686341/</li>
+        <li>Herstand, A. (2020, March 25). Lauv's 4 billion streams, top 40 hit, without a label. Ari's Take. https://aristake.com/emma-macdonald-lauv/</li>
+        <li>Hogg, L. (2021) Traditional Radio vs. Streaming Audio. Media Place Partners https://www.mediaplacepartners.com/traditional-radio-vs-streaming-audio/</li>
+        <li>Horgenmiller, M. (2022, May 5). The Necessary Diversification of Pervasive Recommendation Algorithms. Arts management and Technology Laboratory. https://amt-lab.org/blog/2022/4/recommendation-algorithms-are-pervasive-now-they-need-to-diversify</li>
+        <li>How streaming changed the music industry. (2024, June 28). AIMM. </li>
+        <li>Illustrate Magazine. (2024, September 9). The impact of streaming platforms on the music industry: How Spotify, Apple Music, and others have changed the game. Illustrate Magazine. https://illustratemagazine.com/the-impact-of-streaming-platforms-on-the-music-industry-how-spotify-apple-music-and-others-have-changed-the-game/</li>
+        <li>Kandari, A. (2024, November 6). What is Streaming, How It Works, and the Technology Behind It. VdoCipher Blog. https://www.vdocipher.com/blog/how-does-streaming-work</li>
+        <li>L’Hommedieu, R. (2024, July 9). The Future of the Music Industry – Decentralization. Making a Scene! https://www.makingascene.org/the-future-of-the-music-industry-decentralization/</li>
+        <li>Marcus, L. M. (1998, September 9). Music recording | History, Instruments, & Facts. Encyclopedia Britannica. https://www.britannica.com/topic/music-recording/The-development-of-musical-recording</li>
+        <li>Miquido. (2024, November 22). How streaming changed the music industry? Current impact, trends, and predictions. Miquido. https://www.miquido.com/blog/how-streaming-changed-the-music-industry</li>
+        <li>Mixdown. (2024, November 11). The history of the first music streaming service. Mixdown Magazine. https://mixdownmag.com.au/features/the-history-of-music-streaming/</li>
+        <li>Music streaming | History Timeline. (n.d.). History Timelines. https://historytimelines.co/timeline/music-streaming</li>
+        <li>O’Donnell, M. (2024, June 13). So, how exactly do streaming services calculate royalties in 2024? Trolley. https://trolley.com/learning-center/so-how-exactly-do-streaming-services-calculate-royalties-in-2024/</li>
+        <li>Pastukhov, D. (2019). How Music Streaming Works and The Popular Music Streaming Trends of Today. Soundcharts.com. https://soundcharts.com/blog/how-music-streaming-works-trends</li>
+        <li>RadioToday (2024, November 7) - Top five ways radio is adapting to modern technology. RadioToday UKmhttps://radiotoday.co.uk/2024/11/top-five-ways-radio-is-adapting-to-modern-technology/</li>
+        <li>Ruether, T. (2023, February 21) History of Streaming Media [Infographic]. Wowza. https://www.wowza.com/blog/history-of-streaming-media</li>
+        <li>Stern, Z. (2024, May 29). The Inequalities of Digital music Streaming | The Regulatory Review. The Regulatory Review. https://www.theregreview.org/2024/05/30/stern-the-inequalities-of-digital-music-streaming/</li>
+        <li>Streaming of K-pop surges 362% globally over 5 years: Spotify. (2024, October 9). The Korea Times.</li>
+        <li>Teece, D. J. (2010). Business Models, Business Strategy and Innovation. Long Range Planning, 43(2-3), 172-194. https://doi.org/10.1016/j.lrp.2009.07.003</li>
+        <li>‌Tselikovski, T. (2023, May 11). Broadcasting and the Rise of Podcasting: An Evolution in Digital Audio. Articles. https://medialooks.com/articles/broadcasting-and-the-rise-of-podcasting-an-evolution-in-digital-audio/</li>
+        <li>Walfish, G. (2024, January 31). What’s the future of music distribution? Here are the trends to look out for in 2024 and beyond. Xposure Music. https://info.xposuremusic.com/article/whats-the-future-of-music-distribution-here-are-the-trends-to-look-out-for-in-2024-and-beyond</li>
+        <li>Wilson, J. (2022). The Age of Digital; Music Executive Reacts to the Impact of Digitalization in the Music Industry. Forbes. Retrieved from https://www.forbes.com/sites/joshwilson/2022/09/14/</li>
+        <li>Zimmerman, R. (2024, September 24). How to claim and update your Artist/Label Pages. Symphonic Blog.https://blog.symphonic.com/2024/09/24/claim-your-artist-page/</li>
+    
+      </ul>
+    </section>
+  </div>
+
+  <!-- js file -->
+  <script src="js/script.js"></script>
+
 </body>
 </html>
