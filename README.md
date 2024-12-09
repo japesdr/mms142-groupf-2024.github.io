@@ -1,5 +1,5 @@
 # MMS 142 Group F - 2024 Project Repository
-Welcome to our repository for the MMS 142 project on Music Streaming Services and their disruptive impact on the music and radio broadcasting industries.
+Welcome to our repository for the MMS 142 project on Music Streaming Services and their disruptive impact on the music and radio broadcasting industries. This static HTML website was developed from scratch.
 
 ## Project Overview
 This project explores the evolution, current state, and future prospects of music streaming services, focusing on their impact on both the music and radio broadcasting industries. Additionally, we delve into the positive advancements and negative challenges that these disruptive technologies bring to the forefront.
